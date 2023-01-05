@@ -1,0 +1,2 @@
+console.log("Hello World!") // If we have to print something in console, we will be using "console." and then based on the information we will be calling a function
+// IF we write anything in console, it will get printed as it is
