@@ -1,5 +1,15 @@
 // We have 2 types of dataTypes: Primitve and Non Primitive
 
+// Primitive Data Types are:
+// Boolean
+// Null
+// Undefined
+// Number
+// BigInt
+// String
+// Symbol
+// If anything is not Primitive, it will be an object
+
 // Number
 let num1 = 20
 console.log("Value of number 1 is: " + num1)
