@@ -1,14 +1,14 @@
-switch ("Chrome") // It is a reserved keyword in JS and in the bracket there is the key
+switch (2) // It is a reserved keyword in JS and in the bracket there is the key
 {
-    case "Chrome":
+    case 1:
         console.log("Chrome Started");
         break; // To break means that it will terminate the switch case else it will keep on matchign the multiple cases
         
-    case "Firefox":
+    case 2:
         console.log("Firefox Started");
         break;
 
-    case "Safari":
+    case 3:
         console.log("Safari Started");
         break;
 
