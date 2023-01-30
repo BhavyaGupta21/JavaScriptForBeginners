@@ -14,3 +14,17 @@ while(num <= 10) {
     console.log("Value of number is: " + num);
     num++;
 }
+console.log();
+
+while (true) {
+    console.log("Hello"); // Infinite Loop. To come out of the loop: Press "Ctrl + C"
+}
+
+console.log();
+
+let num1 = 1;
+
+while (num1 < 10) {
+    console.log("Hello");
+    num1++;
+}
