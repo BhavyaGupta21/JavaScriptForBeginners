@@ -7,6 +7,8 @@
 // while(True) {
 // Set of statements // This will run infinite times as the condition will never be false    
 // }
+ 
+// While loop just takes boolean
 
 let num = 1;
 
