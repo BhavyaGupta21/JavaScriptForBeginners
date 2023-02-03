@@ -10,4 +10,4 @@ console.log(a1);
 console.log(a2);
 a1.push(10);
 console.log(a1);
-console.log(a2); // a2 will also get updated here
+console.log(a2); // a2 will also get updated here since both references have same values
