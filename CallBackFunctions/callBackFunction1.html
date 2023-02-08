@@ -1,0 +1,44 @@
+<!--Callback fuction means that we will pass function as an argument. Say we have a function fun1(a, fun2()). Inside this, we have another function fun2() as one of its parameters. Here first the fun1() will get executed and then fun2() will get executed as fun1() gets completed -->
+
+<!-- Say for another example we have an array a1 = [1, 2, 3, 4]. We use the forEach loop here and a function inside it. a1.forEach(callbackfunction). So, first the forEach function will run and after that the callback fuction will run which is inside the round brackets as a reference. If forEach does not runs, callbackfunction will not run. -->
+
+<!-- We have another type of function called as the SetTimeout. This will execute a function after some interval. setTimeout(callbackfunction(), 1000). Whatever function we pass inside this will get executed after 1 sec/1000 mili seconds -->
+
+<!-- We have 2 types of nature of JS - Sync and Async. In order to handle the async nature, we have three things in JS - Callback functions (which is not recommended to handle async issues, promises, using Async/await. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="name1"></h1>
+	<h1 id="name2"></h1>
+	<h1 id="name3"></h1>
+    <h1 id="name4"></h1>
+	<h1 id="name5"></h1>
+    <h1 id="name6"></h1>
+
+	<script type="text/javascript">
+		document.getElementById('name1').innerHTML = "JS"
+		document.getElementById('name2').innerHTML = "Java"
+
+		setTimeout(show, 5000); // setTimeout is a browser API
+		function show() { // Instead of writing this function, we can use anonymous function here. This is the named function.
+			document.getElementById('name3').innerHTML = "Cypress"
+		}
+
+        setTimeout(function() { // This is the anonymous function
+            document.getElementById('name4').innerHTML = "WDIO"
+        }, 5000)
+
+        // We can do the same function with an arrow function
+        setTimeout(() => { // Arrow function
+            document.getElementById('name5').innerHTML = "Playwrite"
+        }, 5000)
+
+		document.getElementById('name6').innerHTML = "Python"
+		
+	</script>
+</body>
+</html>
