@@ -13,3 +13,6 @@ for (let key in person) {
     console.log(person[key]); // This will print the value. Whenever we use "for in" loop, we have to use bracket annotation, dot annotation does not work here.
     console.log();
 }
+
+delete person // We will not be able to delete the entire object at once.
+console.log(person); // We will still be able to get the object
