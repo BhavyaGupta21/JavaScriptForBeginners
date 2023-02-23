@@ -58,3 +58,5 @@ function add(x1, x2, x3) {
 }
 console.log("Sum of the numbers is: "+ add(10, 20, 30));
 console.log(add()); // If we call the function that expects some parameters without any parameter, then it will show "NaN" 
+
+// Whenever we have to call a function, we have to use the paranthesis along with the function name. If we want to refer to a function, we don not use the pair of paranthesis after the function name.
