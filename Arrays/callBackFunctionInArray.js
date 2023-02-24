@@ -20,3 +20,27 @@ for (let i = 0; i < arr.length; i++) {
     }
 
 }
+console.log();
+
+let isEven = (element) => {
+    return element % 2 === 0;
+}
+
+let result = [2, 4, 6, 8].every(isEven);
+console.log(result); // If all the values return "true" only then the result will have true inside it otherwise, it will have false and "false" will get printed.
+console.log();
+
+let result1 = [2, 3, 4, 6, 8].every(isEven);
+console.log(result1);
+console.log();
+
+// Working with callback function with the above code:
+let result2 = [2, 4, 6, 8].every((element) => {
+    return element % 2 === 0;
+});
+console.log(result2);
+console.log();
+
+let result3 = [2, 4, 6, 8].every((element) => element % 2 === 0);
+console.log(result3);
+console.log();
