@@ -117,3 +117,26 @@ console.log();
 
 // Convert string to array:
 console.log(Array.from("John")); // Gets converted to comma separated elements of the array
+console.log();
+
+let arr8 = [2, 3, 4, 5, 6, 7, 8, 9];
+console.log(arr8.fill('h')); // Fills the array values with the specified value inside "fill"
+console.log();
+
+let arr9 = [2, 4, 5, 6, 7, 8, 9];
+console.log(arr9.fill("b", 4)); // "4" will become the starting position for b to get filled till the end of the array
+// Start range is incusive and end range is exclusive.
+console.log();
+
+let arr10 = [2, 3, 4, 5, 6, 7, 8, 9];
+console.log(arr10.fill("b", 3, 6)); // Here 3 becomes the start range and 6 becomes the end range, where 6 will be exclusive
+console.log();
+
+const arr11 = [23, 67, 73, 56, 65, 36, 27, 78, 93, 30];
+const result = arr11.filter((num) => num != 56);
+console.log(result); // Will retrun all the numbers inside arr11 other than the spcified number, here the number is 56
+
+console.log(arr11.slice(1, 4)); // It includes everything that is within the range entered in the slice method. First will remain inclusive and the end range will be exclusive.
+console.log();
+
+console.log(arr11.slice(1)); // This will remove the number of values from the beginning as mentioned inside the slice method
