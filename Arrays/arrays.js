@@ -28,7 +28,7 @@ console.log();
 let arr3 = [
     10,
     "JS",
-    person = {
+    {
         fname: "John",
         lname: "Doe",
         profession: "QA",
@@ -108,3 +108,12 @@ let o2 = {
 arr7.push(o2);
 console.log(arr7);
 console.log();
+
+console.log(arr7.indexOf(true));
+console.log();
+
+console.log(arr7.indexOf("newyy")); // This does not exists inside the array and so will return "-1"
+console.log();
+
+// Convert string to array:
+console.log(Array.from("John")); // Gets converted to comma separated elements of the array
