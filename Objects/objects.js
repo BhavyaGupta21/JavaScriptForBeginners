@@ -54,3 +54,30 @@ let person2 = {
 }
 console.log("Plot 2 of the person 2 is: " + person2.plot[1]);
 // This complete object or the JSON (JavaScript Object Notation) will be key value pair
+console.log();
+
+console.table(person2); // This gives the tabular form of the data (indexes and the values)
+console.log();
+
+let user = {
+    firstName: "JavaScript",
+    lastName: "Cypress",
+    role: "Admin",
+    loginCount: 32,
+    facebookSignedIn: true,
+    courseList: [],
+    buyCourse: function(courseName) {
+        this.courseList.push(courseName); // Here "this" refers to the "user" object
+    },
+    getCourseCount: function () {
+        return `${this.firstName} is enrolled in total of ${this.courseList.length} courses`
+    }
+}
+
+let courseList = true;
+console.log(user.firstName);
+console.log(user.getCourseCount());
+user.buyCourse("React JS course");
+console.log(user.getCourseCount());
+user.buyCourse("Angular course");
+console.log(user.getCourseCount());
