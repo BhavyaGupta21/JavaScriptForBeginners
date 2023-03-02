@@ -1,7 +1,7 @@
 let person = {
     fname: "John",
     age: 25,
-    phone: [12345, 67890, 098765]
+    phone: [12345, 67890, 98765]
 }
 console.log(person);
 console.log();
@@ -59,7 +59,7 @@ let person3 = {
     fname: "John",
     age: 50,
     status: false,
-    phone: [123, 456, 789, 012],
+    phone: [123, 456, 789, 12],
     address: {
         city: "Bangalore",
         country: "India"
@@ -68,3 +68,18 @@ let person3 = {
         console.log("Teaching");
     }
 }
+
+let User = function(firstName, courseCount) { // It is recommended to use uppercase letter whenever creating a prototype
+    this.firstName = firstName; // "this" keyword always points to the window object
+    this.courseCount = courseCount; // "this" is the functional approach of defining object
+    this.getCourseCount = function() {
+        console.log(`Course count is: ${this.courseCount}`);
+    };
+};
+
+let user1 = new User("John", 2); // Here we have to use the new keyword
+console.log(user1);
+// This "new" keyword is responsible for invoking the constructor and creating a unique instance every single time
+
+let user2 = new User("Doe", 4);
+console.log(user2);
